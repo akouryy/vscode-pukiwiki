@@ -9,6 +9,13 @@
   "categories": [
     "Programming Languages"
   ],
+  "scripts": {
+    "prepack": "ruby -rjson -ryaml -e 'print YAML.load(gets p).to_json' syntaxes/pukiwiki.tmLanguage.yaml > syntaxes/pukiwiki.tmLanguage.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:akouryy/vscode-pukiwiki.git"
+  },
   "contributes": {
     "languages": [{
       "id": "pukiwiki",

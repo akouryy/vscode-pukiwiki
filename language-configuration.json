@@ -7,10 +7,18 @@
     },
     // symbols used as brackets
     "brackets": [
+        ["{{{{{", "}}}}}"],
+        ["{{{{", "}}}}"],
+        ["{{{", "}}}"],
+        ["{{", "}}"],
         ["{", "}"],
+        ["[[", "]]"],
         ["[", "]"],
         ["(", ")"]
     ],
+    "folding": {
+      "markers": { "start": "\\{+$", "end": "^\\}+" }
+    },
     // symbols that are auto closed when typing
     "autoClosingPairs": [
         ["{", "}"],
