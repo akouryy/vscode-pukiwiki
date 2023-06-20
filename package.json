@@ -10,7 +10,7 @@
     "Programming Languages"
   ],
   "scripts": {
-    "prepack": "ruby -rjson -ryaml -e 'print YAML.load(gets p).to_json' syntaxes/pukiwiki.tmLanguage.yaml > syntaxes/pukiwiki.tmLanguage.json"
+    "prepack": "ruby -rjson -ryaml -e'puts JSON.pretty_generate YAML.load gets p' syntaxes/pukiwiki.tmLanguage.yaml > syntaxes/pukiwiki.tmLanguage.json"
   },
   "repository": {
     "type": "git",
